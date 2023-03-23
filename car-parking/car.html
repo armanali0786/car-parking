@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Parking App</title>
+  <script src="app.js"></script>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5rem;
+    }
+    td {
+      border: 1px solid black;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 14px;
+    }
+    .occupied {
+      background-color: rgb(168, 18, 255);
+      color: white;
+    }
+  </style>
+</head>
+<body style="text-align: center;">
+  <h1>Car Parking App</h1>
+  <form >
+    <label for="carNumber">Car Entry:</label>
+    <input type="text" id="carNumber">
+    <label for="gateNumber">Gate Entry:</label>
+    <select id="gateNumber">
+      <option value="1">Top left Gate</option>
+      <option value="2">Top Right Gate</option>
+      <option value="3">Bottom Right Gate</option>
+      <option value="4">Bottom Left Gate</option>
+    </select>
+    <button type="button" onclick="parkCar()">Park</button>
+  </form>
+  <div id="parkingLot"></div>
+</body>
+</html>
